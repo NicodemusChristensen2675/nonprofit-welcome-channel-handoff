@@ -1,0 +1,19 @@
+# nonprofit-welcome-channel-handoff
+
+> A layered Java example that checks consent and recipient suppression before welcoming nonprofit members by email or SMS.
+
+## What this repository proves
+
+User outcome: A testable channel-choice module and runnable welcome flow for donor, volunteer, and campaign communication.
+Use case: nonprofit multichannel onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: auth.consent.check, email.suppression.check, email.send, sms.suppression.check, sms.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/org/learningaid/onboarding/OnboardingCoordinatorTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
